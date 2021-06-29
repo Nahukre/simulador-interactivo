@@ -19,7 +19,7 @@ let tiempoTotal = division(valorBien, ahorroAnual);
 let tiempoPlus = division(valorBien, multiplicacion(ahorroAnual, 1.1));
 
 
-switch (ahorroPorcentaje) {
+switch (true) {
     case (ahorroPorcentaje <= 5):
         console.log("Su porcentaje de ahorro es bajo.");
         break;
@@ -39,19 +39,6 @@ switch (ahorroPorcentaje) {
         console.log("Usted no ahorra o ingresó un dato incorrecto.");
         break;
 }
-
-if (ahorroPorcentaje <= 5) {
-    console.log("Su porcentaje de ahorro es bajo.")
-} else if ((ahorroPorcentaje > 5) && (ahorroPorcentaje <= 10)) {
-    console.log("Su porcentaje de ahorro podría ser más elevado.")
-} else if ((ahorroPorcentaje > 10) && (ahorroPorcentaje <= 20)) {
-    console.log("Su porcentaje de ahorro es considerable.")
-} else if ((ahorroPorcentaje > 20) && (ahorroPorcentaje <= 50)) {
-    console.log("Su porcentaje de ahorro es elevado.")
-} else if (ahorroPorcentaje > 50) {
-    console.log("Usted tiene una gran capacidad de ahorro.")
-} else console.log("Usted no ahorra o ingresó un dato incorrecto.");
-
 
 console.log("Su porcentaje de ahorro mensual es del " + ahorroPorcentaje + "%.");
 console.log("Su ahorro anual es de $" + ahorroAnual + ".");
