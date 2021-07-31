@@ -9,7 +9,7 @@ let extra = parseInt(prompt("Si tiene algún ingreso extra destinado a ahorros e
 let objetivo = prompt("Qué bien desea alcanzar con sus ahorros?");
 let valorBien = parseInt(prompt("Cuál es el valor del bien que desea alcanzar con sus ahorros?"));
 
-let ahorroPorcentaje = porciento(multiplicacion(sueldo, ahorro));
+let ahorroPorcentaje = division((multiplicacion(ahorro, 100)), sueldo);
 let ahorroAnual = suma((multiplicacion(ahorro, 12)), extra);
 let mesesDeAhorro = division(valorBien, sueldo);
 let ahorroReal = division(valorBien, ahorro);
